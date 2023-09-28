@@ -4,24 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="./style/style.css">
 
     <title>Task Manager</title>
 </head>
 <body>
-<div class="container">
+<div class="container d-flex flex-column align-items-center">
     <h1>To Do App</h1>
 
-    <div class="tasks">
-        <input type="text" name="task" placeholder="some words">
+    <div class="tasks d-flex justify-content-center flex-grow-0">
+        <input class="task_input w-100" type="text" name="task" placeholder="some words">
         <button class="add_task">+</button>
     </div>
-    <hr>
-    <div class="task_list">
-        <ul class="list"></ul>
+    <div class="w-100 tasks_container d-flex flex-column flex-grow-1">
+        <hr class="w-100">
+        <div class="task_list">
+        </div>
     </div>
 </div>
 
+<!-- JavaScript -->
 <script src="./js/project.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

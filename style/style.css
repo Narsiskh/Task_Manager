@@ -1,3 +1,72 @@
+:root {
+    --primary: #112D4E;
+    --secondry: #AAAAAA;
+    --light: #F9F7F7;
+    --soft: #DBE2EF;
+    --bs-body-bg: #3F72AF;
+    --bs-body-font-family: Ubuntu, sans-serif;
+}
 body {
-    background-color: #3F72AF;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 600px;
+    height: 450px;
+    border-radius: 20px;
+    color: var(--primary);
+    background-color: var(--light);
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.container h1 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.tasks_container {
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.tasks {
+    width: 50%;
+    overflow: hidden;
+    height: 40px;
+    min-height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(177, 177, 177, 0.40);
+}
+
+.tasks .task_input, .add_task {
+    border: none;
+    outline: none;
+}
+
+.tasks .task_input {
+    padding-left: 11px;
+    background-color: var(--soft);
+}
+
+.tasks .add_task {
+    width: auto;
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-color: var(--secondry);
+}
+
+.tasks_container .task_list {
+    padding: 5px;
+    overflow: auto;
+}
+
+.tasks_container .task_list .item {
+    height: 55px;
+    border-radius: 5px;
+    margin-bottom: 31px;
+    background-color: var(--soft);
 }
