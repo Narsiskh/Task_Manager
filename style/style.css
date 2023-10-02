@@ -70,3 +70,15 @@ body {
     margin-bottom: 31px;
     background-color: var(--soft);
 }
+
+.tasks_container .task_list .item button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.tasks_container .task_list .item input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
